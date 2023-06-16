@@ -1,4 +1,4 @@
-import { roobottomPostTemplate } from "./roobottom-post-template.js"
+const roobottomPostTemplate = require("./roobottom-post-template.js")
 
 module.exports = {
   application: {

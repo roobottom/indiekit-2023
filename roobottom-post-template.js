@@ -1,11 +1,11 @@
-import YAML from 'yaml'
+const YAML = require('yaml')
 
 const createSummaryFromContent = (content) => {
   var regexp = RegExp(/(^.*?[a-z]{2,}[.!?])\s+\W*/, 'm')
   return (regexp.exec(content) === null) ? content : regexp.exec(content)[0].trim()
 }
 
-export const roobottomPostTemplate = (properties) => {
+module.exports = (properties) => {
   
   let content
   if (properties.content) {
