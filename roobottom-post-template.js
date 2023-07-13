@@ -1,4 +1,4 @@
-const YAML = require('yaml')
+import YAML from 'yaml'
 
 const createSummaryFromContent = (content) => {
   var regexp = RegExp(/(^.*?[a-z]{2,}[.!?])\s+\W*/, 'm')
