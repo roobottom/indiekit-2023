@@ -5,7 +5,7 @@ const createSummaryFromContent = (content) => {
   return (regexp.exec(content) === null) ? content : regexp.exec(content)[0].trim()
 }
 
-module.exports = (properties) => {
+export const roobottomPostTemplate = (properties) => {
   
   let content
   if (properties.content) {
